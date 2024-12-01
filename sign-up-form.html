@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Sign-Up form</title>
-    <link rel="stylesheet" href="sign-up-form.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="body-container">
@@ -28,24 +28,36 @@
                     <p>Required fields are followed by <span aria-label="required">*</span>.</p>
                     <fieldset>
                         <legend>Name</legend>
-                            <label for="first_name">First name: <span aria-label="required">*</span></label>
-                            <input type="text" name="first_name" id="first_name" placeholder="Bob..." required>
-                            <label for="last_name">Last name: <span aria-label="required">*</span></label>
-                            <input type="text" name="last_name" id="last_name" placeholder="Fred..." required>
+                            <div class="col1">
+                                <label for="first_name">First name: <span aria-label="required">*</span></label>
+                                <input type="text" name="first_name" id="first_name" placeholder="Bob..." required>
+                            </div>
+                            <div class="col2">
+                                <label for="last_name">Last name: <span aria-label="required">*</span></label>
+                                <input type="text" name="last_name" id="last_name" placeholder="Fred..." required>
+                            </div>
                     </fieldset>
                     <fieldset>
                         <legend>Contact details</legend>
-                            <label for="email">Email: <span aria-label="required">*</span></label>
-                            <input type="email" name="email" id="email" placeholder="test@example.com" required>
-                            <label for="phone_number">Phone number: <span aria-label="required">*</span></label>
-                            <input type="tel" name="phone_number" id="phone_number" required>
+                            <div class="col1">
+                                <label for="email">Email: <span aria-label="required">*</span></label>
+                                <input type="email" name="email" id="email" placeholder="test@example.com" required>
+                            </div>
+                            <div class="col2">
+                                <label for="phone_number">Phone number: <span aria-label="required">*</span></label>
+                                <input type="tel" name="phone_number" id="phone_number" required>
+                            </div>
                     </fieldset>
                     <fieldset>
                         <legend>Password</legend>
-                            <label for="password">Password: <span aria-label="required">*</span></label>
-                            <input type="password" name="password" id="password" required>
-                            <label for="confirm_password">Confirm password: <span aria-label="required">*</span></label>
-                            <input type="password" name="confirm_password" id="confirm_password" required>
+                            <div class="col1">
+                                <label for="password">Password: <span aria-label="required">*</span></label>
+                                <input type="password" name="password" id="password" required>
+                            </div>
+                            <div class="col2">
+                                <label for="confirm_password">Confirm password: <span aria-label="required">*</span></label>
+                                <input type="password" name="confirm_password" id="confirm_password" required>
+                            </div>
                     </fieldset>
                 </div>
                 <div class="submit-button">

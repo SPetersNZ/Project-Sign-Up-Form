@@ -36,8 +36,13 @@
 
 p,
 h2,
-legend {
+legend,
+.submit-button {
     margin: 10px;
+}
+
+.submit-button > p {
+    margin-left: 0;
 }
 
 input,
@@ -45,13 +50,12 @@ label {
     display: block;
 }
 
-/* 
-***Tidy up this code to left/right align the input boxes
-firstname {
+.body-container-right-form .col1 {
     float: left;
+    margin: 0px 10px 10px 10px;
 }
 
-lastname {
-    float: right;
-} 
-*/
+.body-container-right-form .col2 {
+    float: inline-start;
+    margin: 0px 10px 10px 10px;
+}
