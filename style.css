@@ -41,8 +41,19 @@ legend,
     margin: 10px;
 }
 
-.submit-button > p {
-    margin-left: 0;
+.submit-button {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    color: yellow;
 }
 
 input,
@@ -58,4 +69,29 @@ label {
 .body-container-right-form .col2 {
     float: inline-start;
     margin: 0px 10px 10px 10px;
+}
+
+.body-container-right-form input[type="text"],
+.body-container-right-form input[type="email"],
+.body-container-right-form input[type="tel"],
+.body-container-right-form input[type="password"],
+.body-container-right-form select,
+.body-container-right-form textarea {
+    background-color: #FFFFFF;
+    width: 250px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 14px;
+    resize: none;
+    padding: 5px;
+}
+
+.body-container-right-form input[type="text"]:user-invalid,
+.body-container-right-form input[type="email"]:user-invalid,
+.body-container-right-form input[type="tel"]:user-invalid,
+.body-container-right-form input[type="password"]:user-invalid {
+    border: 1px solid red;
+    color: red;
+    box-shadow: none;
+    background-color: rgba(255, 0, 0, 0.1);
 }
