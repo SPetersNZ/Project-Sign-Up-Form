@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body-container {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.body-container-left,
+.body-container-right {
+    display: flex;
+}
+
+.body-container-left {
+    width: 30vw;
+    height: 100vh;
+    background-image: url(images/palm-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.body-container-right {
+    width: 70vw;
+    flex-direction: column;
+}
+
+.body-container-right-form {
+    border: 1px solid black;
+    box-shadow: 2px 2px lightgrey;
+}
+
+p,
+h2,
+legend {
+    margin: 10px;
+}
+
+input,
+label {
+    display: block;
+}
+
+/* 
+***Tidy up this code to left/right align the input boxes
+firstname {
+    float: left;
+}
+
+lastname {
+    float: right;
+} 
+*/

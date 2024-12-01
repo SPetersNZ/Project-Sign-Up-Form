@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Sign-Up form</title>
+    <link rel="stylesheet" href="sign-up-form.css">
+</head>
+<body>
+    <div class="body-container">
+        <div class="body-container-left">
+            <div class="logo-background">
+                <div class="logo"></div>
+                <!-- logo -->
+            </div>
+            <!-- image credits -->
+        </div>
+        <div class="body-container-right">
+            <div class="hero-text">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+                <p>Sign up <i>now</i> to get started.</p>
+                <br />
+                <p>You <i>know</i> you want to.</p>
+            </div>
+            <form action="example.com/path" method="post">
+                <div class="body-container-right-form">
+                    <h2>Lets do this!</h2>
+                    <p>Required fields are followed by <span aria-label="required">*</span>.</p>
+                    <fieldset>
+                        <legend>Name</legend>
+                            <label for="first_name">First name: <span aria-label="required">*</span></label>
+                            <input type="text" name="first_name" id="first_name" placeholder="Bob..." required>
+                            <label for="last_name">Last name: <span aria-label="required">*</span></label>
+                            <input type="text" name="last_name" id="last_name" placeholder="Fred..." required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contact details</legend>
+                            <label for="email">Email: <span aria-label="required">*</span></label>
+                            <input type="email" name="email" id="email" placeholder="test@example.com" required>
+                            <label for="phone_number">Phone number: <span aria-label="required">*</span></label>
+                            <input type="tel" name="phone_number" id="phone_number" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Password</legend>
+                            <label for="password">Password: <span aria-label="required">*</span></label>
+                            <input type="password" name="password" id="password" required>
+                            <label for="confirm_password">Confirm password: <span aria-label="required">*</span></label>
+                            <input type="password" name="confirm_password" id="confirm_password" required>
+                    </fieldset>
+                </div>
+                <div class="submit-button">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="https://www.google.co.nz">Log in.</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
