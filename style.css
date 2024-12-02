@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
 .body-container {
     display: flex;
     align-items: center;
@@ -19,9 +24,8 @@
     width: 30vw;
     height: 100vh;
     background-image: url(images/palm-background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
+    border-right: 3px solid black;
 }
 
 .body-container-right {
@@ -30,8 +34,9 @@
 }
 
 .body-container-right-form {
-    border: 1px solid black;
-    box-shadow: 2px 2px lightgrey;
+    background-color: rgba(128, 128, 128, 0.2);
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
 }
 
 p,
@@ -50,6 +55,7 @@ legend,
     border-radius: 3px;
     padding: 10px 40px;
     cursor: pointer;
+    margin-top: 30px;
 }
 
 .submit-button:hover {
@@ -79,7 +85,7 @@ label {
 .body-container-right-form textarea {
     background-color: #FFFFFF;
     width: 250px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     font-size: 14px;
     resize: none;
@@ -94,4 +100,35 @@ label {
     color: red;
     box-shadow: none;
     background-color: rgba(255, 0, 0, 0.1);
+}
+
+.logo-background {
+    height: 225px;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20vh;
+}
+
+.logo-container {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container img {
+    width: 100px;
+}
+
+.logo-container p {
+    font-family: Norse-Bold;
+    color: white;
+    font-size: 112px;
+}
+
+.fieldset_password {
+    border-bottom: none;
 }
