@@ -93,6 +93,16 @@ label {
     padding: 5px;
 }
 
+.body-container-right-form input[type="text"]:focus,
+.body-container-right-form input[type="email"]:focus,
+.body-container-right-form input[type="tel"]:focus,
+.body-container-right-form input[type="password"]:focus {
+    border: 1px solid blue;
+    border-radius: 3px;
+    box-shadow: 3px 3px white;
+    background-color: rgba(0, 128, 0, 0.1);
+}
+
 .body-container-right-form input[type="text"]:user-invalid,
 .body-container-right-form input[type="email"]:user-invalid,
 .body-container-right-form input[type="tel"]:user-invalid,
