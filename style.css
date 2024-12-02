@@ -26,6 +26,7 @@
     background-image: url(images/palm-background.jpg);
     background-size: cover;
     border-right: 3px solid black;
+    flex-direction: column;
 }
 
 .body-container-right {
@@ -102,21 +103,14 @@ label {
     background-color: rgba(255, 0, 0, 0.1);
 }
 
-.logo-background {
-    height: 225px;
-    width: inherit;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-top: 20vh;
-}
-
 .logo-container {
-    height: inherit;
-    width: inherit;
     display: flex;
     flex-direction: row;
-    justify-items: center;
     align-items: center;
     justify-content: center;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20vh;
 }
 
 .logo-container img {
@@ -131,4 +125,16 @@ label {
 
 .fieldset_password {
     border-bottom: none;
+}
+
+.credits-container  p,
+.credits-container  a {
+    color: white;
+}
+
+.credits-container p {
+    display: flex;
+    height: calc(100vh - 20vh - 225px);
+    justify-content: center;
+    align-items: flex-end;
 }
